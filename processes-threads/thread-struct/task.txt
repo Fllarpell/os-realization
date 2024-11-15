@@ -1,0 +1,16 @@
+Create a struct Thread which contains three fields id which holds
+the thread id, an integer number i and message as a string of size
+256.
+Write a program ex2.c that creates an array of n threads using
+the struct Thread. The field i should store the index of the
+created thread (0 for the first thread and so on) whereas the field
+id contains the thread id and the field message contains the
+message “Hello from thread i” where i is the value of the field i.
+Each thread should output its id and message, then exit. Main
+program should inform about thread creation by displaying the
+message “Thread i is created”.
+Do the threads print messages in the same order you created?
+Fix the program to force the order to be strictly Thread 1 is
+created, Thread 1 prints message, Thread 1 exits and so on.
+Hint: use gcc -pthread ex2.c to compile.
+Submit ex2.c and ex2.sh which runs the program.

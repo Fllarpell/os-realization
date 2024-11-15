@@ -1,0 +1,13 @@
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579
+Total number of primes in range [0, 10000000): 664579

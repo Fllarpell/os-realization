@@ -1,0 +1,11 @@
+Write a C program ex3.c, that runs for 10 seconds. Every second
+it should:
+allocate 10 MB of memory
+fill it with zeros
+print memory usage with getrusage() function
+sleep for 1 second
+Compile and run the program in the background (./ex3 &) and
+run ’vmstat 1 ’ at the same time. Observe what happens to the
+memory. Pay attention to si and so fields.
+Add comments to ex3.txt with your findings.
+Hint: use memset(ptr, value, size) to fill the allocated memory

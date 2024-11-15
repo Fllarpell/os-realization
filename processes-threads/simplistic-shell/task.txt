@@ -1,0 +1,11 @@
+Write a program ex4.c to create your own simplistic shell. It
+should read user input and be able to run a command without
+arguments, such as pwd, ls, top, pstree and so on.
+Extend your previous code to handle commands with arguments
+and run the processes in background (another process). Do not
+use here the shell operator & for running the process in the
+background.
+Note: Here, it is not permitted to use the library function system
+but you should use one of the system calls for executing the
+commands such as execve.
+Hint: use man fork and man execve.

@@ -1,0 +1,38 @@
+In this exercise we are going to solve the problem from ex3 in a
+different way. We will distribute the primality checking
+computation of integers in [0, n) between the m threads in a
+different manner.
+We will have a global state for the next number to check for
+primality, k, and the number of primes discovered thus far, c.
+Each of the m threads reads the global k, checks it for primality,
+and increments it. If it turned out to be prime, it increments the
+global c.
+It must be the case that no two threads check the same integer for
+primality, and the total of the thread checks must account for the
+interval [0, n). Also, we want the thread execution to be as parallel
+as possible.
+You are given the function that checks an integer for primality, the
+functions for reading and incrementing the global k and c, and a mutex
+for handling k and c. Your task is as follows.
+Write the threads start routine.
+Utilize the mutexes so that:
+No two threads check the same integer for primality.
+No integer is left unchecked by any of the threads.
+The execution is as parallel as possible.
+Set up the threads and join them.
+Print the final result.
+Clean up!
+Note that you should not directly manipulate the global k and c. You
+are already given function to handle that for you. It is however your
+responsibility that the mutexes are set so that to prevent race
+conditions.
+Write the functionality in ex4.c. Also, write a shell script ex4.sh that
+compiles the program and times its execution with n = 10, 000, 000 and
+m ∈ {1, 2, 4, 10, 100}. Store the 5 timing results in ex4 res.txt.
+Finally, provide a brief explanation of the results in ex4 exp.txt and
+compare them to the results from exercise 3.
+Submit ex4.c, ex4.sh, ex4 exp.txt and ex4 res.txt
+Useful tools:
+pthread mutex t
+pthread mutex lock
+pthread mutex unlock

@@ -1,0 +1,57 @@
+# Object files
+*.o
+*.obj
+
+# Libraries
+*.lib
+*.a
+
+# Executable files
+*.exe
+*.out
+*.app
+
+# Debug and log files
+*.log
+*.gch
+*.pch
+*.dSYM/
+*.stackdump
+
+# IDE and editor-specific files
+*.swp
+*~
+*.sublime-workspace
+*.sublime-project
+.vscode/
+.idea/
+*.code-workspace
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Coverage files
+*.gcda
+*.gcno
+*.gcov
+
+# Build directories
+/build/
+/bin/
+/obj/
+/dist/
+
+# Backup files
+*.bak
+*.old
+*.orig
+
+# Test output
+test-result.xml

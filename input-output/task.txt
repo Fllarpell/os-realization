@@ -1,0 +1,29 @@
+Write a C program ex1.c that gets keyboard events directly from
+the keyboard device and prints them to stdout.
+Note: Try exploring
+/dev/input/by-path/platform-i8042-serio-0-event-kbd
+You have to use the file
+/dev/input/by-path/platform-i8042-serio-0-event-kbd (or a similar
+keyboard event character device file) for capturing keyboard
+events. You should endlessly read from the file to get all events
+You should use the input event structure from linux/input.h1
+Only PRESSED, REPEATED and RELEASED events should be handled.
+Print the output events in format: PRESSED 0x0023 (35)
+Where PRESSED - type of event, 0x0023 and (35) are hex and
+decimal representation of event code respectively.
+The progam should be executed using sudo permission.
+Th program should be terminated by pressing E+X.
+Print and save the output to ex1.txt
+Save the code in ex1.c
+Modify previous program to output shortcuts: P+E → “I passed
+the Exam!”, C+A+P → “Get some cappuccino!” and one custom
+shortcut of your choice.
+The program should print on the specified shortcuts in addition to
+the output events (“PRESSED”, “RELEASED”, “REPEATED”).
+Create the shortcut of your choice with custom message. The
+number of keys should be at least 2 and no more than 6.
+Print the available shortcuts at start of the program.
+Print and append the output to ex1.txt.
+Submit ex1.txt and ex1.c.
+The source code in ex1.c should be well-documented and
+explained.

@@ -1,0 +1,10 @@
+# ninja log v6
+5	308	1731608705045511213	CMakeFiles/os_realization.dir/processes-threads/channel-subscriber/channel.c.o	5acdc20d1a7d6a2e
+5	309	1731608705046008320	CMakeFiles/os_realization.dir/processes-threads/channel-subscriber/publisher.c.o	f48954ebb10440b8
+3	247	1731608705043988141	CMakeFiles/os_realization.dir/processes-threads/multiforks/ex3.c.o	995935ca0ee72554
+247	308	1731608705287363093	CMakeFiles/os_realization.dir/processes-threads/thread-struct/ex2.c.o	ef7a4a222d1e74ba
+5	247	1731608705045256430	CMakeFiles/os_realization.dir/processes-threads/simplistic-shell/ex4.c.o	e279d5d9148128bd
+6	247	1731608705046223521	CMakeFiles/os_realization.dir/main.c.o	df9cb646661906cd
+6	195	1731553673007990205	CMakeFiles/os_realization.dir/processes-threads/threads-time/ex1.c.o	278803225db30db9
+5	309	1731608705045773412	CMakeFiles/os_realization.dir/processes-threads/channel-subscriber/subscriber.c.o	f1e96b170ef81a5b
+176	273	1731553909018809973	os_realization	348cd7d279425f9c

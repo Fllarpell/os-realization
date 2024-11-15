@@ -1,0 +1,25 @@
+Write two programs agent.c (Agent) and controller.c
+(Controller) and create a file text.txt which contains some
+message.
+On startup, the agent program creates the file
+/var/run/agent.pid and writes its PID into the file. It then reads
+the contents of a file called text.txt, prints it on the console and
+finally sleeps indefinitely.
+The agent would be sensitive to two signal types: SIGUSR1 and
+SIGUSR2. When the agent receives a SIGUSR1, it reads the
+contents of the text from text.txt and prints it on the console;
+when it receives a SIGUSR2, it prints ”Process terminating...” and
+then exits.
+On startup, the controller checks for a running agent by fetching
+the agent’s PID from the file /var/run/agent.pid. If it cannot
+find an agent, it prints “Error: No agent found.” and then exits;
+otherwise, it prints “Agent found.” and continues.
+Then in an infinite loop, the controller prints “Choose a command
+{“read”, “exit”, “stop”, “continue”} to send to the agent” and
+then waits for user input. The user enters one of the commands.
+When the user enters his/her choice, the controller sends the
+corresponding signal {“read”:“SIGUSR1”, “exit”:“SIGUSR2”,
+“stop”:“SIGSTOP”, “continue”:“SIGCONT”} to the agent. If the
+user chooses “exit”, the controller should also terminate after
+sending the signal. If the user presses Ctrl+C, the controller
+should send a SIGTERM to the agent and then exit.

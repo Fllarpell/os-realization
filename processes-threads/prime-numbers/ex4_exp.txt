@@ -1,0 +1,4 @@
+we used threads with mutexes to synchronize access to variables k and c.
+The threads take numbers sequentially and check them for simplicity.
+As m increases, the execution time decreases, but with too many threads,
+the synchronization overhead negates the benefit of parallel execution.

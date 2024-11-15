@@ -1,0 +1,2 @@
+Publisher creates named channels for each subscriber, and subscribers receive messages through these channels.
+We need different channels so that each subscriber can read messages independently and avoid errors such as SIGPIPE.

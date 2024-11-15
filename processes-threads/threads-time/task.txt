@@ -1,0 +1,7 @@
+Write a program ex1.c which creates two new processes, any of
+them should not be a child of the other (their parents should be
+the “main” process).
+Print the ID of each three processes created in the program and
+their parent IDs. Print the execution time for each process in
+milliseconds. The execution time starts from the first instruction
+after fork

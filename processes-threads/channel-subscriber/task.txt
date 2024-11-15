@@ -1,0 +1,42 @@
+In this exercise, you will work on implementing a simple
+publish/subscribe messaging system via pipes and named pipes.
+This exercise consists of two parts (I and II).
+Part I:
+write a program channel.c which runs two processes (publisher
+and subscriber) and one (unnamed) pipe between them.
+The publisher process reads a message from stdin and sends it to
+the subscriber who prints the message to stdout.
+The maximum size of a single message is 1024 bytes.
+Submit channel.c.
+Part II:
+Write a program publisher.c which forks n child process which in
+turn open n named pipes in the path (/tmp/ex1). The parent
+process reads messages from stdin and the child processes publish
+the messages to the subscribers.
+The publisher program accepts n (command line argument) as the
+maximum number of subscribers and creates n named pipes in the
+path (/tmp/ex1/s{i}) where i ∈ [1, n]. For example, the publisher
+creates the named pipe (/tmp/ex1/s1) for the first subscriber.
+Write another program subscriber.c which accepts a number id
+(command line argument) indicates the subscriber’s index and
+opens the named pipe (/tmp/ex1/s{id}), reads the messages and
+prints to its stdout.
+Write a script ex1.sh to run one publisher and n subscriber where
+n is read as a command line argument for the script where
+(0 < n < 4). Run all subscribers and the publisher in separate
+shell windows (https://askubuntu.com/a/46630). Look at the
+output of all running subscribers and check whether they all
+received the message or some of them. Why we need to create n
+named pipes for n subscribers? Add the answer to the file ex1.txt.
+Assume that all subscribers had subscribed to the channel. Do not
+create threads here, but only processes.
+The maximum size of a single message is 1024 bytes.
+The publisher/subscriber should always be ready to read/write
+messages from/to stdin/stdout. We can terminate them by
+sending termination signals such as SIGINT (Ctrl+C).
+Add your explanation to ex1.txt about your findings in this
+exercise with respect to inter-process communication via pipes and
+fifo files.
+Submit publisher.c, subscriber.c, ex1.txt and ex1.sh.
+Note: Ensure that the subscriber opens the pipe before you start
+writing to it, otherwise you would get SIGPIPE error.

@@ -1,0 +1,11 @@
+In this exercise, you will do an experiment, observe and record the
+results.
+Write a program ex3.c that calls fork() in a loop for n times and
+sleeps for 5 seconds after each call. Run the program as a
+background process and then run pstree command several times.
+The variable n should be read from the command line as an
+argument and not from stdin.
+Run the program for n=3. Look at the output and tell how many
+processes are created. Explain the result.
+Run the program so that it would call fork() 5 times. See how the
+result changes.
